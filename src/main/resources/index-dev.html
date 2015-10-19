@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Scala.js application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style>
+  	td {
+  	  border: 1px solid #000;
+  	  height: 20px;
+  	  width: 50px;
+  	}
+  	
+  </style>
+</head>
+<body style="margin: 0px">
+
+<div>
+    <div id="battleships"></div>
+    <div id="gameInfo"></div>
+</div>
+
+<script type="text/javascript" src="../battleships-jsdeps.js"></script>
+<script type="text/javascript" src="../battleships-fastopt.js"></script>
+<script type="text/javascript" src="/workbench.js"></script>
+<script>
+    battleships.BattleshipsExample().main(document.getElementById('battleships'));
+</script>
+</body>
+</html>
